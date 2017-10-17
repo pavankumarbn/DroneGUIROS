@@ -1,1 +1,1 @@
-# GUIBasedDroneControlROS
+# GUIBasedDroneControl
