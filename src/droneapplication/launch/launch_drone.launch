@@ -1,0 +1,10 @@
+<launch>
+        <arg name="droneip" default="192.168.1.1" />
+        <node name="ardrone_driver" pkg="ardrone_autonomy" type="ardrone_driver" output="screen" args="-ip $(arg droneip)">
+                <param name="navdata_demo" value="1" />
+                <param name="realtime_navdata" value="False" />
+                <param name="realtime_video" value="True" />
+                <param name="looprate" value="50" />
+        </node>
+       <!-- <node name="ardrone_control_node" pkg="droneapplication" type="main.py" required="true"/> -->
+</launch> 

@@ -1,0 +1,8 @@
+prefix=/home/velab/catkin_ws1/devel
+
+Name: ardrone_autonomy
+Description: Description of ardrone_autonomy
+Version: 1.4.1
+Cflags: -I/home/velab/catkin_ws1/devel/include
+Libs: -L/home/velab/catkin_ws1/devel/lib 
+Requires: roscpp image_transport message_runtime sensor_msgs std_srvs tf camera_info_manager

@@ -1,0 +1,5 @@
+import PGUI
+class test:
+	#def pavan(self):
+	  #print("pavan")
+      #obj = PGUI.Ui_Form.TestC()

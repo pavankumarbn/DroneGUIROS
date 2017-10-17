@@ -1,0 +1,8 @@
+prefix=/home/velab/catkin_ws1/install
+
+Name: droneapplication
+Description: Description of droneapplication
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/velab/catkin_ws1/install/lib 
+Requires: 

@@ -1,0 +1,2 @@
+ardrone_autonomy:ardrone_tutorials:beginner_tutorials:droneapplication:droneapplication1:tum_ardrone
+-DCATKIN_DEVEL_PREFIX=/home/velab/catkin_ws1/devel -DCMAKE_INSTALL_PREFIX=/home/velab/catkin_ws1/install -G Unix Makefiles

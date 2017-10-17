@@ -1,0 +1,3 @@
+repository='external project URL'
+module='/home/velab/catkin_ws1/src/tum_ardrone/thirdparty/thirdparty.tar.gz'
+tag=''

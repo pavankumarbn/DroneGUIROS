@@ -1,0 +1,8 @@
+prefix=/home/velab/catkin_ws1/devel
+
+Name: tum_ardrone
+Description: Description of tum_ardrone
+Version: 0.0.0
+Cflags: -I/home/velab/catkin_ws1/devel/include
+Libs: -L/home/velab/catkin_ws1/devel/lib 
+Requires: message_runtime std_msgs ardrone_autonomy

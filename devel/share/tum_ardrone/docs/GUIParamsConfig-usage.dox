@@ -1,0 +1,9 @@
+\subsubsection usage Usage
+\verbatim
+<node name="Config" pkg="tum_ardrone" type="Config">
+  <param name="KBsensRP" type="double" value="1.0" />
+  <param name="KBsensYaw" type="double" value="1.0" />
+  <param name="KBsensGAZ" type="double" value="1.0" />
+</node>
+\endverbatim
+

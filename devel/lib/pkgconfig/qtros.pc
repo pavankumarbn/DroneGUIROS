@@ -1,0 +1,8 @@
+prefix=/home/velab/catkin_ws1/devel
+
+Name: qtros
+Description: Description of qtros
+Version: 0.1.0
+Cflags: 
+Libs: -L/home/velab/catkin_ws1/devel/lib 
+Requires: 

@@ -1,0 +1,8 @@
+\subsubsection parameters ROS parameters
+
+Reads and maintains the following parameters on the ROS server
+
+- \b "~KBsensRP" : \b [double] Sensitivity for roll/pitch Keyboard control min: 0.0, default: 1.0, max: 1.0
+- \b "~KBsensYaw" : \b [double] Sensitivity for yaw Keyboard control min: 0.0, default: 1.0, max: 1.0
+- \b "~KBsensGAZ" : \b [double] Sensitivity for gaz Keyboard control min: 0.0, default: 1.0, max: 1.0
+

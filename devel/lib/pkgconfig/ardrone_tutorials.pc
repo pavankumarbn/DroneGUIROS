@@ -1,0 +1,8 @@
+prefix=/home/velab/catkin_ws1/devel
+
+Name: ardrone_tutorials
+Description: Description of ardrone_tutorials
+Version: 1.0.0
+Cflags: 
+Libs: -L/home/velab/catkin_ws1/devel/lib 
+Requires: 
