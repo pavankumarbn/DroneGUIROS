@@ -4,8 +4,8 @@
 #
 # Created: Wed Aug 23 00:09:37 2017
 #      by: PyQt4 UI code generator 4.10.4
-#
-# WARNING! All changes made in this file will be lost!
+# Author: Pavan Kumar B N
+# Email: pavanbn8@gmail.dom
 
 
 import roslib
@@ -244,14 +244,7 @@ class Ui_Form(object):
         self.rotY_D.setText(_translate("Form", "rotY_D", None))
         self.rotZ_D.setText(_translate("Form", "rotZ_D", None))
         self.Stop.setText(_translate("Form", "Stop", None))
-        #self.SquareMove.setText(_translate("Form","SquareMove",None))
-        # self.Goto.setText(_translate("Form","Goto",None))
-       # self.UploadFile.setText(_translate("Form","uploadFile",None))
-        # self.label_4.setText(_translate("Form", "  Load Path File", None))
-        # self.label.setText(_translate("Form", "Set Distance", None))
-        # self.label_2.setText(_translate("Form", "Set Height", None))
-        # self.Submit.setText(_translate("Form", "Submit", None))
-        # self.SubmitH.setText(_translate("Form", "Submit", None))
+       
         self.Square.setText(_translate("Form", "Square", None))
         self.Straight.setText(_translate("Form", "Straight", None))
         self.Circle.setText(_translate("Form", "Circle", None))
@@ -343,10 +336,7 @@ class Widget(QtGui.QWidget, Ui_Form):
           #  self.State_D.setText("Looping")
              
 
-       # def click(self):
-        #print("Hello Click pressed")
-       # h = 100
-       # self.Vx_D.setText(str(h))
+      
 
 
     def takeOff(self):
@@ -424,32 +414,11 @@ class Widget(QtGui.QWidget, Ui_Form):
         y= odoData.pose.pose.position.y
         z= odoData.pose.pose.position.z
 
-    #orientation
-    #quaternion = (msg.pose.pose.orientation.x,msg.pose.pose.orientation.y, msg.pose.pose.orientation.z, msg.pose.pose.orientation.w)
-    #euler = tf.transformations.euler_from_quaternion(quaternion)
-    #roll = euler[0]
-    #pitch = euler[1]
-    #yaw = euler[2]
- 
 
         print ("%f %f %f"%(x,y,z))
         rospy.sleep(10)
         #print("%f %f"%(rotY,vx))  
-    
-    def goto(self):
-        self.vel_msg = Twist()
-
-         #receive the users input
-        print("lets try to go ")
-        go_x = input ("input your go_x")
-        go_y = input ("input your go_y")
-        go_z = input ("input your go_z")
-
-        self.vel_msg.linear.x = go_x
-        self.vel_msg.linear.y = go_y
-        self.vel_msg.linear.z = go_z
-
-        self.velocity_pub.publish(self.vel_msg)     
+  
     def uploadFile(self):
         print "hello its upload file"   
 
@@ -480,86 +449,6 @@ class Widget(QtGui.QWidget, Ui_Form):
             else:
                 print "Turing"
             rospy.sleep(4)#tB)
-
-
-
-    def square1(self):
-        print("inside square")
-        
-        self.twist = Twist()
-        self.twist_tur = Twist()
-        self.twist_for = Twist()
-        fr = open("square.txt","r")
-        #src/droneapplication/src/flightplans
-        for line in fr.readlines():
-            values = line.split(",")
-            #values = line.split("\n")
-            print values[0] 
-            # x = float(values[0])
-            # y = float(values[1])
-            # z = float(values[2])   
-            # self.twist.linear.x = float(values[0])
-            # self.twist.linear.y = float(values[1])
-            # self.twist.linear.z = float(values[2])
-            # self.twist.angular.z = float(radians(values[3])
-            # tt = float3
-            # if self.twist.linear.z == 0:
-            #     print "moving straight"
-            # else:
-            #     print "turning"
-        
-            # rospy.loginfo("Going Straight")
-            # #for x in range(0,2):
-            # self.velocity_pub.publish(self.twist)
-            # rospy.sleep(time) 
-        #self.twist_tur = Twist()
-
-       # self.twist_for.linear.x = 0.1
-
-        #self.twist_tur.linear.x = 0
-        #self.twist_tur.angular.z = radians(45)
-
-        
-            z = radians(float(values[2]))
-            x = float(values[0])
-            y = float(values[1])             
-            self.twist_for.linear.x = x
-            self.twist_tur.linear.y = y
-            self.twist_tur.angular.z = z
-
-
-
-        #print("taking off")
-        #self.takeoff_pub.publish(Empty())
-
-        count = 0
-        while (count < 4):
-            #go forward 0.4 m (2 seconds * 0.2 m / seconds)
-            rospy.loginfo("Going Straight")
-            for x in range(0,2):    
-                self.velocity_pub.publish(self.twist_for)
-                print (x )
-                rospy.sleep(3)
-        # turn 90 degrees
-            rospy.loginfo("Turning")
-            for x in range(0,1):
-                self.velocity_pub.publish(self.twist_tur)
-                print  (x )
-                rospy.sleep(3)            
-        count = count + 1
-        print count
-            
-           # if(count == 0): 
-           #     rospy.loginfo("Drone should be close to the original starting position.")
-
-        if(count == 4): 
-               # count = 0
-            self.twist.linear.x = 0
-            self.twist.linear.y = 0
-            self.twist.linear.z = 0
-            self.velocity_pub.publish(self.twist)
-            print ("covered Sqaure shape")
-
     def straight(self):
         print("inside straight move")
         self.twist = Twist()
@@ -699,9 +588,6 @@ class Widget(QtGui.QWidget, Ui_Form):
                 print "Turing"
             rospy.sleep(4)#tB)
 
-
-        #fr.close()
-        #goto [doube x] [double y] [double z] [double yaw]     
 if __name__ == "__main__":
     import sys
 
