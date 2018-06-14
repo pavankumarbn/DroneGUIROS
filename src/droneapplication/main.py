@@ -5,7 +5,7 @@
 # Created: Wed Aug 23 00:09:37 2017
 #      by: PyQt4 UI code generator 4.10.4
 # Author: Pavan Kumar B N
-# Email: pavanbn8@gmail.dom
+# Email: pavanbn8@gmail.com
 
 
 import roslib
