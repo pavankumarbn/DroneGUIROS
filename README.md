@@ -4,8 +4,11 @@
 Programming Platform: Ubuntu 14.04 LTS, ROS Indigo and Python. 
 
 Video Link: 1. https://www.youtube.com/watch?v=CNgfM2UAReA&t=3s 
+
             2. https://www.youtube.com/watch?v=hnqQQcdCCMA 
+            
             3. https://www.youtube.com/watch?v=f-kJ2xFYlSE&t=4s
+            
             4. https://www.youtube.com/watch?v=l5OWm4zIkJw&t=8s
             
             
