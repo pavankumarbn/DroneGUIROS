@@ -3,6 +3,8 @@
 2. main.py - Allows you to control drone through GUI. 
 Programming Platform: Ubuntu 14.04 LTS, ROS Indigo and Python. 
 
+If you make any changes. Please feel free to update. 
+
 Video Link: 1. https://www.youtube.com/watch?v=CNgfM2UAReA&t=3s 
             2. https://www.youtube.com/watch?v=hnqQQcdCCMA  
             3. https://www.youtube.com/watch?v=f-kJ2xFYlSE&t=4s  
