@@ -5,6 +5,8 @@ Programming Platform: Ubuntu 14.04 LTS, ROS Indigo and Python.
 
 If you make any changes. Please feel free to update. 
 
+Please click here to download Latest Release https://api.github.com/repos/pavankumarbn/DroneGUIROS/releases/assets/16426639
+
 Video Link: 1. https://www.youtube.com/watch?v=CNgfM2UAReA&t=3s 
             2. https://www.youtube.com/watch?v=hnqQQcdCCMA  
             3. https://www.youtube.com/watch?v=f-kJ2xFYlSE&t=4s  
